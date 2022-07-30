@@ -1,0 +1,15 @@
+.btn {
+	color: $color-white;
+	cursor: pointer;
+	background-color: $color-secondary;
+	border-radius: 5px;
+}
+
+.btn:hover {
+	color: $color-white;
+	background-color: $color-secondary-light;
+	transition: background-color $transition-duration, $transition-timing;
+	-webkit-transition: background-color $transition-duration, $transition-timing;
+	-moz-transition: background-color $transition-duration, $transition-timing;
+	-o-transition: background-color $transition-duration, $transition-timing;
+}
