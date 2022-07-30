@@ -1,0 +1,39 @@
+.pricing__wrapper {
+  margin: 0 auto;
+  max-width: $md-container-width;
+  overflow: auto;
+  padding: 0;
+}
+
+.pricing__tiers {
+  background-color: $light-grey;
+  display: grid;
+  grid-template-areas:
+    'cloud server';
+  gap: 25px 25px;
+  padding: 20px;
+}
+
+.pricing__tiers > div {
+  border-radius: 8px;
+  box-shadow: $box-shadow;
+  background-color: $color-white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.pricing__tiers--tier1 { 
+  grid-area: cloud;
+}
+
+.pricing__tiers--tier2 { 
+  grid-area: server; 
+}
+
+.pricing__tiers--tier.pricing__tiers--tier1, .pricing__tiers--tier.pricing__tiers--tier2 { 
+  padding: 3em;
+}
+
+.pricing__tiers--tier h2 {
+  color: $color-accent;
+}

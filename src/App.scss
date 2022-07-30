@@ -1,8 +1,10 @@
 @import "modules/variables";
+@import "globals/partials/pricing-tiers";
 @import "globals/components/buttons";
 @import "globals/components/slider";
 @import "globals/components/navbar";
 
+/* Globals */
 *, html {
   box-sizing: border-box;
   font-size: 16px;
@@ -30,13 +32,20 @@ a:hover {
 }
 
 h1, h2 {
-  font-weight: $weight-primary-regular;
+  font-weight: $weight-primary-medium;
   line-height: $line-height-m;
-  margin: 10px 0;
+  margin: 0.25em 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: $size-l;
+  font-weight: $weight-primary;
+  text-align: center;
 }
 
 p {
-  margin: 10px 0;
+  margin: 0.6em 0;
 }
 
 img {
@@ -47,4 +56,37 @@ img {
   align-items: center;
   display: flex;
   height: 100%;
+}
+
+
+/* Hero Titles */
+.hero {
+  background-color: $light-grey;
+  padding: 0 0 5px 0;
+}
+
+.hero__titles {
+  padding: 4em 0 3em 0;
+}
+
+
+/* BG Wave Divider */
+.pricing--bg-color {
+  left: 0;
+  line-height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 726px;
+  width: 100%;
+}
+
+.pricing--bg-color svg {
+  display: block;
+  height: 79px;
+  position: relative;
+  width: calc(123% + 1.3px);
+}
+
+.pricing--bg-color .shape-fill {
+  fill: $light-grey;
 }

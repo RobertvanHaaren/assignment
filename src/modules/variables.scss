@@ -17,6 +17,8 @@ $color-accent: #0D80D8;
 $color-secondary: #00B065;
 $color-secondary-light: #25d284;
 
+$light-grey: #F1F5F6;
+
 
 $family-primary: 'Roboto', sans-serif;
 
@@ -55,4 +57,4 @@ $transition-timing: ease-in-out;
 $border-width: 2px;
 $border-style: solid;
 
-$box-shadow: 0px 0px 15px #ccc;
+$box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.10);
