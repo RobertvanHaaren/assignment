@@ -35,7 +35,7 @@
 }
 
 .MuiTypography-root.MuiTypography-body1 {
-  float: right;
+  display: inline-flex;
   font-weight: $weight-primary-regular;
   padding-right: 1.6em;
 }

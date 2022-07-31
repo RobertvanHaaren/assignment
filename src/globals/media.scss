@@ -25,11 +25,26 @@
       'server';
   }
 
-  .push-down-m .makeStyles-root-1 {
+  .push-down-m .makeStyles-root-1, .MuiGrid-item .makeStyles-root-10 {
     width: 100%;
   }
 
   .pricing--bg-color {
     display: none;
+  }
+
+  .pricing__tiers .MuiBox-root-13 .push-down-l-m {
+    margin-bottom: 2.2em;
+  }
+
+  h1 {
+    font-size: 1.9em;
+    padding: 0 1em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: $line-height-m;
+    padding: 0 3em;
   }
 }
