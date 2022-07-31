@@ -1,4 +1,5 @@
 .btn, .btn--big {
+	border: none;
 	color: $color-white;
 	cursor: pointer;
 	background-color: $color-secondary;
@@ -11,15 +12,26 @@
 	background-color: $color-secondary-light;
 }
 
+.btn:focus, .btn--big:focus {
+	box-shadow: none;
+	outline: none;
+}
+
 .btn--big {
 	border: none;
 	font-size: 1.2em;
 	font-weight: $weight-primary-regular;
-	padding: 0.5em 0.8em;
+	    padding: 0.7em 0.8em 0.5em;
 	transition: all .4s ease;
 }
 
 
 .btn--big:hover {
 	background-color: $color-secondary-light;
+}
+
+.btn__chevron {
+	fill: $color-white;
+	margin: 5px 2px 5px 10px;
+	width: 10px;
 }

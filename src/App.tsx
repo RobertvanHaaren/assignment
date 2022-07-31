@@ -22,7 +22,12 @@ function App() {
               <li className="navbar__menu-li"><a href="#">Enterprise</a></li>
               <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
               <li className="navbar__menu-li"><a href="#">Sign-in</a></li>
-              <li className="navbar__menu-li"><button className="btn">Start a trial {'>'}</button></li>
+              <li className="navbar__menu-li">
+                <button className="btn">Start a trial 
+                  <svg className="btn__chevron" xmlns="http://www.w3.org/2000/svg" width="8" viewBox="0 0 8 16"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3l5 5z"/>
+                  </svg>
+                </button>     
+              </li>
             </ul>
           </nav>
         </div>
@@ -37,11 +42,17 @@ function App() {
             <div className="pricing__tiers">
               <div className="pricing__tiers--tier pricing__tiers--tier1">
                 <Cloud />
-                <button className="btn--big">Start a trial {'>'}</button>
+                <button className="btn--big">Start a trial
+                  <svg className="btn__chevron" xmlns="http://www.w3.org/2000/svg" width="8" viewBox="0 0 8 16"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3l5 5z"/>
+                  </svg>
+                </button>
               </div>
               <div className="pricing__tiers--tier pricing__tiers--tier2">
                 <Server />
-                <button className="btn--big">Start a trial {'>'}</button>
+                <button className="btn--big">Start a trial
+                  <svg className="btn__chevron" xmlns="http://www.w3.org/2000/svg" width="8" viewBox="0 0 8 16"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3l5 5z"/>
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
