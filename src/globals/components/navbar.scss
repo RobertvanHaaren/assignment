@@ -42,7 +42,11 @@
 
 .navbar__menu-li {
   font-weight: $weight-primary;
-  padding: 0 $spacing-s;
+  padding: 0;
+}
+
+.navbar__menu-li a {
+    padding: 1.5em 0.8em;
 }
 
 .navbar__menu-li:hover {

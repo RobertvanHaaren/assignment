@@ -37,7 +37,7 @@
 .MuiTypography-root.MuiTypography-body1 {
   display: inline-flex;
   font-weight: $weight-primary-regular;
-  padding-right: 1.6em;
+  padding-right: 0.4em;
 }
 
 .pricing__tiers .push-down-m {
@@ -65,4 +65,10 @@
 .slider__end {
 	float:right;
 	font-size: 0.9em;
+}
+
+.icon-info {
+	cursor: pointer;
+	fill: $blue-grey-text;
+	width: 18px;
 }

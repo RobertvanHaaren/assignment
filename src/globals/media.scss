@@ -1,15 +1,3 @@
-//BIG SCREEN DOWN TO TABLET
-@include media($max-width: $xxl-container-width){
-}
-
-//MEDIUM-BIG SCREEN DOWN TO TABLET
-@include media($md-container-width, $xl-container-width){
-}
-
-//SMALL DESKTOP
-@include media($lg-container-width, $xl-container-width){
-}
-
 //TABLET
 @include media($O-container-width, $lg-container-width){
   .navbar__menu .navbar__menu-items {

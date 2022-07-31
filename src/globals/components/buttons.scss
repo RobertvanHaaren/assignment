@@ -3,7 +3,7 @@
 	color: $color-white;
 	cursor: pointer;
 	background-color: $color-secondary;
-	border-radius: 5px;
+	border-radius: 0.3em;
 	transition: all .4s ease;
 }
 
@@ -17,11 +17,15 @@
 	outline: none;
 }
 
+.btn {
+	padding: 0.55em 0.7em 0.4em 0.8em;
+}
+
 .btn--big {
 	border: none;
 	font-size: 1.2em;
 	font-weight: $weight-primary-regular;
-	    padding: 0.7em 0.8em 0.5em;
+	padding: 0.7em 0.8em 0.5em;
 	transition: all .4s ease;
 }
 
@@ -32,6 +36,6 @@
 
 .btn__chevron {
 	fill: $color-white;
-	margin: 5px 2px 5px 10px;
+	margin: 0.1em 0.2em 0.3em 0.5em;
 	width: 10px;
 }
