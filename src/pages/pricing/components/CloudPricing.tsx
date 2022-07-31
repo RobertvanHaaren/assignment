@@ -155,7 +155,7 @@ const CloudPricing = () => {
         <Grid item className="push-down-m">
           <div className={classes.root}>
             <div className="slider__min-max">
-              <span className="slider__start">0</span>
+              <span className="slider__start">10</span>
               <span className="slider__end">5000</span>
             </div>
             <Grid container spacing={2} alignItems="center">

@@ -149,7 +149,7 @@ const ServerPricing = () => {
         <Grid item className="push-down-l-m">
           <div className={classes.root}>
             <div className="slider__min-max">
-              <span className="slider__start">0</span>
+              <span className="slider__start">10</span>
               <span className="slider__end">Unlimited</span>
             </div>
             {renderUnlimitedTargetsChecked ? null : (
