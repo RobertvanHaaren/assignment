@@ -1,0 +1,49 @@
+//Transition
+@mixin transition($property, $duration:$transition-duration, $timing:$transition-timing,  $delay:0s){
+    transition-property: $property;
+    transition-duration: $duration;
+    transition-timing-function: $timing;
+    transition-delay: $delay;
+}
+
+//Animations
+@mixin animation($name, $seconds, $delay:0s){
+    animation: $name $seconds infinite alternate $delay;
+}
+
+//Media queries
+@mixin media($min-width:false, $max-width:false, $type: all){
+    @if $min-width and $max-width {
+
+        @media #{$type} and (min-width: $min-width) and (max-width: $max-width) {
+            @content;
+        }
+
+    } @else if not $min-width and $max-width {
+
+        @media #{$type} and (max-width: $max-width) {
+            @content;
+        }
+
+    } @else if $min-width and not $max-width {
+
+        @media #{$type} and (min-width: $min-width) {
+            @content;
+        }
+
+    }
+}
+
+@mixin main-font {
+    font: $weight-primary $size-m $family-primary;
+}
+
+@mixin screen-xs-max {
+    @include media($max-width: map-get($screen-xs, 'breakpoint')){
+        @content;
+    }
+}
+
+@function font-path($font-name, $font-file) {
+    @return '/www/fonts/#{$font-name}/#{$font-file}';
+}
