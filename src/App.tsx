@@ -37,9 +37,11 @@ function App() {
             <div className="pricing__tiers">
               <div className="pricing__tiers--tier pricing__tiers--tier1">
                 <Cloud />
+                <button className="btn--big">Start a trial {'>'}</button>
               </div>
               <div className="pricing__tiers--tier pricing__tiers--tier2">
                 <Server />
+                <button className="btn--big">Start a trial {'>'}</button>
               </div>
             </div>
           </div>

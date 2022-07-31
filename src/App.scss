@@ -31,6 +31,16 @@ a:hover {
   text-decoration: none;
 }
 
+.link {
+  color: $light-text;
+  font-size: 0.85em;
+  text-decoration: underline;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
 h1, h2 {
   font-weight: $weight-primary-medium;
   line-height: $line-height-m;
@@ -76,7 +86,7 @@ img {
   line-height: 0;
   overflow: hidden;
   position: absolute;
-  top: 726px;
+  top: 950px;
   width: 100%;
 }
 

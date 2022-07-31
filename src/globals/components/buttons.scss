@@ -1,15 +1,25 @@
-.btn {
+.btn, .btn--big {
 	color: $color-white;
 	cursor: pointer;
 	background-color: $color-secondary;
 	border-radius: 5px;
+	transition: all .4s ease;
 }
 
-.btn:hover {
+.btn:hover, .btn--big:hover {
 	color: $color-white;
 	background-color: $color-secondary-light;
-	transition: background-color $transition-duration, $transition-timing;
-	-webkit-transition: background-color $transition-duration, $transition-timing;
-	-moz-transition: background-color $transition-duration, $transition-timing;
-	-o-transition: background-color $transition-duration, $transition-timing;
+}
+
+.btn--big {
+	border: none;
+	font-size: 1.2em;
+	font-weight: $weight-primary-regular;
+	padding: 0.5em 0.8em;
+	transition: all .4s ease;
+}
+
+
+.btn--big:hover {
+	background-color: $color-secondary-light;
 }

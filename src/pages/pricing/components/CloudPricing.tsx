@@ -134,16 +134,22 @@ const CloudPricing = () => {
     <>
       <Box>
         <h2>Cloud</h2>
-        <p>
+        <p className="pricing__subtitle">
+          DevOps automation as-a-service
+        </p>
+        <hr className="pricing__divider"></hr>
+        <p className="pricing__description-title">
+          Pay-as-you-go
+        </p>
+        <p className="pricing__description">
+          Charges are calculated monthly in arrears based on <strong>actual usage</strong>. Use the calculator below for a price indication.
+        </p>
+        <p className="pricing__price">
           <span>
             {formatCcy(totalPrice)}
             <sup>*</sup>
           </span>
-          <span> / Month</span>
-        </p>
-        <p>
-          High availability feature included in plan with more than 100
-          deployment
+          <span>/mo estimated</span>
         </p>
 
         <Grid item>
@@ -223,6 +229,8 @@ const CloudPricing = () => {
             </Grid>
           </div>
         </Grid>
+        <a href="#" className="link">How do I know what I approx. will spend?</a>
+        <hr className="pricing__divider"></hr>
       </Box>
     </>
   );
