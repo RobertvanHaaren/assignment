@@ -62,6 +62,13 @@ img {
   width:100%;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button, 
+input[type=number] {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+
 .flex {  
   align-items: center;
   display: flex;
@@ -76,7 +83,7 @@ img {
 }
 
 .hero__titles {
-  padding: 4em 0 3em 0;
+  padding: 8em 0 2em 0;
 }
 
 
@@ -86,7 +93,7 @@ img {
   line-height: 0;
   overflow: hidden;
   position: absolute;
-  top: 950px;
+  top: 922px;
   width: 100%;
 }
 

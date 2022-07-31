@@ -54,13 +54,13 @@
 
 .pricing__description {
   color: $light-text;
-  font-size: 1em;
+  font-size: 0.85em;
   padding: 0 0 0.5em 0;
   text-align: left;
 }
 
 .pricing__price {
-  padding: 0 0 0.5em 0; 
+  padding: 0; 
 }
 
 .pricing__price span {
@@ -71,8 +71,4 @@
 .pricing__divider {
   color: $darker-grey;
   margin: 1em -48px 1em;
-}
-
-.pricing__tiers--tier .MuiGrid-item {
-  margin-bottom: 0.5em;
 }

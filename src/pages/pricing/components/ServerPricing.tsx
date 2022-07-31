@@ -134,7 +134,7 @@ const ServerPricing = () => {
           Pay-as-you-go
         </p>
         <p className="pricing__description">
-          Charges are calculated monthly in arrears based on <strong>actual usage</strong>. Use the calculator below for a price indication.
+          Charges are calculated monthly in arrears based on actual usage. Use the calculator below for a price indication.
         </p>
         <p className="pricing__price">
           <span>
@@ -143,18 +143,15 @@ const ServerPricing = () => {
               : formatCcy(totalPrice)}
             <sup>*</sup>
           </span>
-          <span> / Month</span>
+          <span>/mo estimated</span>
         </p>
 
-        <Grid item>
-          <Typography>
-            For{" "}
-            {renderUnlimitedTargetsChecked
-              ? ` unlimited deployment targets`
-              : " up to " + valueTargets + " deployment targets "}
-          </Typography>
-
+        <Grid item className="push-down-l-m">
           <div className={classes.root}>
+            <div className="slider__min-max">
+              <span className="slider__start">0</span>
+              <span className="slider__end">Unlimited</span>
+            </div>
             {renderUnlimitedTargetsChecked ? null : (
               <Grid container spacing={2} alignItems="center">
                 <Grid item xs>
@@ -166,37 +163,31 @@ const ServerPricing = () => {
                     max={2000}
                   />
                 </Grid>
-
-                <Grid item>
-                  <Input
-                    className={classes.input}
-                    value={valueTargets}
-                    margin="dense"
-                    onChange={(e) =>
-                      updateUserTargets(parseInt(e.target.value, 10))
-                    }
-                    onBlur={handleBlur}
-                    inputProps={{
-                      step: 10,
-                      min: 10,
-                      max: 2000,
-                      type: "number",
-                      "aria-labelledby": "input-slider",
-                    }}
-                  />
-                </Grid>
               </Grid>
             )}
-            <FormControlLabel
-              control={
-                <Checkbox
-                  checked={renderUnlimitedTargetsChecked}
-                  onChange={unlimitedTargetsCheck}
-                  name="unlimitedTargets"
-                />
-              }
-              label="Unlimited Targets"
-            />
+            <Grid item>
+              <Input
+                className={classes.input}
+                value={valueTargets}
+                margin="dense"
+                onChange={(e) =>
+                  updateUserTargets(parseInt(e.target.value, 10))
+                }
+                onBlur={handleBlur}
+                inputProps={{
+                  step: 10,
+                  min: 10,
+                  max: 2000,
+                  type: "number",
+                  "aria-labelledby": "input-slider",
+                }}
+              />
+              <Typography>
+                {renderUnlimitedTargetsChecked
+                  ? `unlimited deployment targets`
+                  : "deployment targets "}
+              </Typography>
+            </Grid>
           </div>
         </Grid>
         <a href="#" className="link">How do I know what I approx. will spend?</a>

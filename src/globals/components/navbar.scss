@@ -3,7 +3,9 @@
   box-shadow: $box-shadow;
   color: $color-text;
   height: 65px ;
-  margin: 0;
+  margin: 0 auto;
+  position: fixed;
+  width: 100%;
 }
 
 .navbar__wrapper.flex {

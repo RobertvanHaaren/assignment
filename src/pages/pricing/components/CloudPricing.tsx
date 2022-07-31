@@ -142,7 +142,7 @@ const CloudPricing = () => {
           Pay-as-you-go
         </p>
         <p className="pricing__description">
-          Charges are calculated monthly in arrears based on <strong>actual usage</strong>. Use the calculator below for a price indication.
+          Charges are calculated monthly in arrears based on actual usage. Use the calculator below for a price indication.
         </p>
         <p className="pricing__price">
           <span>
@@ -152,15 +152,12 @@ const CloudPricing = () => {
           <span>/mo estimated</span>
         </p>
 
-        <Grid item>
-          <Typography>
-            For{" "}
-            {valueTargets <= FREE_TARGETS
-              ? ` up to 10 deployment targets`
-              : " up to " + valueTargets + " deployment targets "}
-          </Typography>
-
+        <Grid item className="push-down-m">
           <div className={classes.root}>
+            <div className="slider__min-max">
+              <span className="slider__start">0</span>
+              <span className="slider__end">5000</span>
+            </div>
             <Grid container spacing={2} alignItems="center">
               <Grid item xs>
                 <Slider
@@ -171,7 +168,8 @@ const CloudPricing = () => {
                   max={5000}
                 />
               </Grid>
-              <Grid item>
+            </Grid>
+            <Grid item>
                 <Input
                   className={classes.input}
                   value={valueTargets}
@@ -188,16 +186,18 @@ const CloudPricing = () => {
                     "aria-labelledby": "input-slider",
                   }}
                 />
+                <Typography>
+                  {valueTargets <= FREE_TARGETS
+                    ? `deployment targets`
+                    : "deployment targets "}
+                </Typography>
               </Grid>
-            </Grid>
           </div>
           <div className={classes.root}>
-            <Typography>
-              For{" "}
-              {valueMinutes <= FREE_TARGETS
-                ? ` free deployment minutes `
-                : " " + valueMinutes + " deployment minutes "}
-            </Typography>
+            <div className="slider__min-max push-up-m">
+              <span className="slider__start">0</span>
+              <span className="slider__end">10000</span>
+            </div>
             <Grid container spacing={2} alignItems="center">
               <Grid item xs>
                 <Slider
@@ -208,7 +208,8 @@ const CloudPricing = () => {
                   max={10000}
                 />
               </Grid>
-              <Grid item>
+            </Grid>
+            <Grid item>
                 <Input
                   className={classes.input}
                   value={valueMinutes}
@@ -225,8 +226,12 @@ const CloudPricing = () => {
                     "aria-labelledby": "input-slider-minutes",
                   }}
                 />
+                <Typography>
+                  {valueMinutes <= FREE_TARGETS
+                    ? ` free deployment minutes `
+                    : "deployment minutes "}
+                </Typography>
               </Grid>
-            </Grid>
           </div>
         </Grid>
         <a href="#" className="link">How do I know what I approx. will spend?</a>
