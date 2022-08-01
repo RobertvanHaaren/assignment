@@ -255,7 +255,7 @@ const CloudPricing = () => {
               </Grid>
           </div>
         </Grid>
-        <a href="#" className="link">How do I know what I approx. will spend?</a>
+        <p className="pricing__avg-usage">Avg. usage for <strong>small teams</strong>(0-10 people)</p>
         <hr className="pricing__divider"></hr>
       </Box>
     </>
