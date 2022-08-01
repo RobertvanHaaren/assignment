@@ -4,6 +4,7 @@
 @import "globals/partials/pricing-tiers";
 @import "globals/components/buttons";
 @import "globals/components/slider";
+@import "globals/components/tooltip";
 @import "globals/components/navbar";
 
 /* Globals */
@@ -85,7 +86,7 @@ input[type=number] {
 }
 
 .hero__titles {
-  padding: 8em 0 2em 0;
+  padding: 8em 0 1em 0;
 }
 
 

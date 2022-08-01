@@ -1,0 +1,45 @@
+.pricing__tooltip {
+  color: $color-white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.23em;
+  margin: 0px 0px 1px 2px;
+  position: absolute;
+}
+
+.pricing__tooltip .tooltiptext {
+  background-color: $color-white;
+  border-bottom: 2px solid $blue-grey;
+  box-shadow: $box-shadow;
+  border-radius: 6px;
+  color: $color-base;
+  padding: 2em 1.5em 2em 3em;
+  position: absolute;
+  text-align: left;
+  visibility: hidden;
+  width: 250px;
+  z-index: 2;
+
+  bottom: 100%;
+  left: 50%;
+  margin-left: -130px;
+}
+
+.pricing__tooltip:hover .tooltiptext {
+  font-size: 0.5em;
+  visibility: visible;
+}
+
+.pricing__tooltip .tooltiptext ul li {
+  font-size: 0.9em;
+  padding-bottom: 0.4em;
+}
+
+.pricing__tooltip ul li::before {
+  content: "\2022";
+  color: $color-accent;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
